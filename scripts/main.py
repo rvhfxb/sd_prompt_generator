@@ -10,7 +10,7 @@ from webui import wrap_gradio_gpu_call
 
 
 def on_ui_tabs():
-    tag_files = ["body","attire","nsfw"]
+    tag_files = ["body","attire","nsfw","other"]
 
     with gr.Blocks() as prompt_generator:
         generate_button = gr.Button('Send to txt2img', variant='primary')
