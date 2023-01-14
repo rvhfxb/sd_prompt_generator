@@ -11,7 +11,7 @@ function setPrompt(pre,post,tags, ...ckecked){
                 prompts.push("{"+tags[i].join("|")+"}")
             }
             else{
-                prompts.push("{"+list.slice(1).join("|")+"}")
+                prompts.push("{"+list.filter(x=>x!="Random").join("|")+"}")
             }
         }
         else{
